@@ -1,1 +1,120 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f4f4;
+}
 
+header{
+background:white;
+padding:20px;
+text-align:center;
+border-bottom:3px solid #1f3c88;
+}
+
+header h1{
+color:#1f3c88;
+margin:0;
+font-size:48px;
+}
+
+header h2{
+font-weight:normal;
+margin-top:10px;
+font-size:22px;
+}
+
+.container{
+display:grid;
+grid-template-columns:25% 45% 30%;
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:15px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.section-title{
+color:#1f3c88;
+font-weight:bold;
+border-bottom:2px solid #1f3c88;
+padding-bottom:5px;
+margin-bottom:10px;
+font-size:18px;
+}
+
+.photo{
+width:100%;
+border-radius:5px;
+}
+
+footer{
+background:#1f3c88;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+font-size:14px;
+}
+
+/* HEADER TYPE SOUMIA */
+
+.header-container{
+width:96%;
+m*rgin:auto;
+}
+
+header{
+background:w*ite;
+padding-top:25px;
+padding-bot*om:20px;
+border:none;
+text-align:l*ft;
+}
+
+header h1{
+margin:0;
+font-s*ze:34px;
+font-weight:400;
+color:#2*3f8f;
+}
+
+header h2{
+margin-top:8px*
+margin-bottom:25px;
+font-size:36p*;
+font-weight:300;
+color:#233f8f;
+*
+
+.menu-bar{
+display:flex;
+justify*content:space-between;
+align-items*center;
+}
+
+.menu-left{
+display:fle*;
+gap:35px;
+}
+
+.menu-left a,
+.menu*right a{
+text-decoration:none;
+col*r:black;
+font-size:18px;
+}
+
+.menu-*ine{
+margin-top:15px;
+height:7px;
+*ackground:#d8d8d8;
+}
+
+.menu-active*
+width:75px;
+height:7px;
+backgroun*:#233f8f;
+}
