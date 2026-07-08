@@ -4,32 +4,28 @@ body{
     background:#f4f4f4;
 }
 
-/* =========================
-   HEADER TYPE SOUMIA
-========================= */
+/* HEADER */
 
 header{
     background:white;
-    padding-top:20px;
-    padding-bottom:25px;
+ *  padding:30px;
 }
 
-.header-container{
+.header-contain*r{
     width:96%;
-    margin:auto;
-}
+    margin:auto;*}
 
 header h1{
     margin:0;
-    font-size:34px;
+    fo*t-size:34px;
     font-weight:400;
-    color:#233f8f;
+*   color:#233f8f;
 }
 
 header h2{
-    margin-top:8px;
-    margin-bottom:25px;
-    font-size:38px;
+  * margin-top:8px;
+    margin-bottom*25px;
+    font-size:36px;
     font-weight:300;
     color:#233f8f;
 }
@@ -59,56 +55,45 @@ header h2{
 
 .menu-line{
     margin-top:15px;
-    height:7px;
     background:#d8d8d8;
+    height:7px;
 }
 
 .menu-active{
-    width:75px;
+    width:80px;
     height:7px;
     background:#233f8f;
 }
 
-/* =========================
-   CONTENU
-========================= */
+/* CONTENU */
 
 .container{
-    display:grid;
-    grid-template-columns:25% 45% 30%;
+    displa*:grid;
+    grid-template-columns:2*% 45% 30%;
     gap:20px;
-    padding:20px;
+    paddi*g:20px;
 }
 
 .card{
-    background:white;
-    padding:15px;
-    box-shadow:0 0 10px rgba(0,0,0,0.10);
+    background:w*ite;
+    padding:20px;
+    box-sha*ow:0 0 10px rgba(0,0,0,0.1);
 }
 
 .section-title{
     color:#233f8f;
     font-weight:bold;
-    font-size:18px;
+    margin-bottom:10px;
     border-bottom:2px solid #233f8f;
     padding-bottom:5px;
-    margin-bottom:10px;
 }
 
-.photo{
-    width:100%;
-    border-radius:6px;
-}
-
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer{
-    background:#233f8f;
+    background:*233f8f;
     color:white;
-    text-align:center;
+    text-*lign:center;
     padding:20px;
-    margin-top:20px;
-    font-size:14px;
+   *margin-top:20px;
 }
