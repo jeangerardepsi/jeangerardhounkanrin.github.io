@@ -1,366 +1,389 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jean-Gerard HOUNKANRIN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean-Gerard HOUNKANRIN</title>
 
-<style>
+    <style>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
 
-body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#f8f8f8;
-    color:#222;
-}
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#f8f8f8;
+            color:#222;
+        }
 
-/* HEADER */
+        /* HEADER */
 
-header{
-    background:white;
-    padding:35px 60px;
-}
+        header{
+            background:white;
+            padding:35px 60px;
+        }
 
-header h1{
-    font-size:28px;
-    font-weight:400;
-    color:#233f8f;
-}
+        header h1{
+            color:#233f8f;
+            font-size:28px;
+            font-weight:400;
+        }
 
-header h2{
-    font-size:52px;
-    font-weight:300;
-    color:#233f8f;
-    margin-top:10px;
-}
+        header h2{
+            color:#233f8f;
+            font-size:52px;
+            font-weight:300;
+            margin-top:10px;
+        }
 
-.menu-bar{
-    margin-top:25px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
+        .menu-bar{
+            margin-top:25px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
 
-.menu{
-    display:flex;
-    gap:35px;
-}
+        .menu{
+            display:flex;
+            gap:35px;
+        }
 
-.menu a{
-    text-decoration:none;
-    color:black;
-    font-size:18px;
-}
+        .menu a{
+            text-decoration:none;
+            color:#000;
+            font-size:18px;
+        }
 
-.cv-btn{
-    text-decoration:none;
-    color:black;
-    font-size:18px;
-}
+        .menu a:hover{
+            color:#233f8f;
+        }
 
-.separator{
-    height:7px;
-    background:#d9d9d9;
-    margin-top:15px;
-}
+        .cv-btn{
+            text-decoration:none;
+            color:#000;
+            font-size:18px;
+        }
 
-.separator::before{
-    content:"";
-    display:block;
-    width:80px;
-    height:7px;
-    background:#233f8f;
-}
+        .cv-btn:hover{
+            color:#233f8f;
+        }
 
-/* CONTENU */
+        .separator{
+            height:8px;
+            background:#d7d7d7;
+            margin-top:15px;
+            position:relative;
+        }
 
-.content{
-    display:grid;
-    grid-template-columns:22% 48% 30%;
-    gap:30px;
-    padding:30px 60px;
-}
+        .separator::before{
+            content:"";
+            position:absolute;
+            left:0;
+            top:0;
+            width:75px;
+            height:8px;
+            background:#f28c00;
+        }
 
-/* COLONNE GAUCHE */
+        /* CONTENU */
 
-.sidebar img{
-    width:100%;
-    border-radius:6px;
-}
+        .content{
+            display:grid;
+            grid-template-columns:22% 48% 30%;
+            gap:30px;
+            padding:30px 60px;
+        }
 
-.info{
-    margin-top:20px;
-}
+        /* COLONNE GAUCHE */
 
-.info p{
-    margin-bottom:10px;
-}
+        .sidebar img{
+            width:100%;
+            border-radius:8px;
+        }
 
-.contact-btn{
-    display:block;
-    background:#233f8f;
-    color:white;
-    text-align:center;
-    padding:15px;
-    margin-top:20px;
-    text-decoration:none;
-    border-radius:5px;
-}
+        .info{
+            margin-top:20px;
+        }
 
-/* CENTRE */
+        .info p{
+            margin-bottom:12px;
+            line-height:1.5;
+        }
 
-.section-title{
-    font-size:28px;
-    margin-bottom:25px;
-}
+        .contact-btn{
+            display:block;
+            text-align:center;
+            background:#233f8f;
+            color:white;
+            text-decoration:none;
+            padding:12px;
+            border-radius:5px;
+            margin-top:15px;
+        }
 
-.job{
-    margin-bottom:35px;
-}
+        /* CENTRE */
 
-.job-title{
-    color:#233f8f;
-    font-size:20px;
-    font-weight:bold;
-}
+        .section-title{
+            color:#233f8f;
+            font-size:30px;
+            margin-bottom:25px;
+        }
 
-.company{
-    font-size:18px;
-    margin-top:5px;
-    margin-bottom:10px;
-}
+        .job{
+            margin-bottom:35px;
+        }
 
-.job ul{
-    padding-left:20px;
-}
+        .job-title{
+            color:#233f8f;
+            font-size:20px;
+            font-weight:bold;
+        }
 
-.job li{
-    margin-bottom:8px;
-}
+        .company{
+            font-size:18px;
+            margin-top:5px;
+            margin-bottom:10px;
+        }
 
-/* DROITE */
+        .job ul{
+            padding-left:20px;
+        }
 
-.skill-category{
-    margin-bottom:30px;
-}
+        .job li{
+            margin-bottom:8px;
+        }
 
-.skill-category h3{
-    color:#233f8f;
-    margin-bottom:10px;
-}
+        /* DROITE */
 
-.skill-category p{
-    line-height:1.6;
-}
+        .skill-category{
+            margin-bottom:30px;
+        }
 
-/* FOOTER */
+        .skill-category h3{
+            color:#233f8f;
+            margin-bottom:10px;
+        }
 
-footer{
-    background:#233f8f;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
+        .skill-category p{
+            line-height:1.6;
+        }
 
-@media(max-width:1000px){
+        /* FOOTER */
 
-.content{
-    grid-template-columns:1fr;
-}
+        footer{
+            background:#233f8f;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
 
-header{
-    padding:20px;
-}
+        /* MOBILE */
 
-header h2{
-    font-size:34px;
-}
+        @media(max-width:1000px){
 
-.menu-bar{
-    flex-direction:column;
-    gap:20px;
-}
+            .content{
+                grid-template-columns:1fr;
+            }
 
-}
+            header{
+                padding:20px;
+            }
 
-</style>
+            header h2{
+                font-size:34px;
+            }
 
+            .menu-bar{
+                flex-direction:column;
+                align-items:flex-start;
+                gap:20px;
+            }
+
+            .menu{
+                flex-wrap:wrap;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
 
-<header>
+<header id="accueil">
 
-<h1>Jean-Gerard HOUNKANRIN</h1>
+    <h1>Jean-Gerard HOUNKANRIN</h1>
 
-<h2>
-Pilotage IT & Support Applicatif | Chef de Projet SI
-</h2>
+    <h2>
+        Pilotage IT & Support Applicatif | Chef de Projet SI
+    </h2>
 
-<div class="menu-bar">
+    <div class="menu-bar">
 
-<div class="menu">
-#
-#
-#Formations</a>
-#
-#
-</div>
+        <div class="menu">
+            #accueil
+            experiences">Expériences</a>
+            formations">Formations</a>
+            #competences
+            #interets
+        </div>
 
-# class="cv-btn">
-Télécharger mon CV PDF
-</a>
+        IN.pdf" class="cv-btn" target="_blank">
+            Télécharger mon CV PDF
+        </a>
 
-</div>
+    </div>
 
-<div class="separator"></div>
+    <div class="separator"></div>
 
 </header>
 
 <div class="content">
 
-<!-- GAUCHE -->
+    <!-- GAUCHE -->
 
-<div class="sidebar">
+    <div class="sidebar">
 
-<img src="photo.png" alt="Photo">
+        <img src="photo.png" alt="Photo">
 
-<div class="info">
+        <div class="info">
 
-<p><strong>📍 Localisation</strong><br>Cergy (95)</p>
+            <p><strong>📍 Localisation</strong><br>Cergy (95)</p>
 
-<p><strong>📧 Email</strong><br>
-jeangerardhounkanrin@gmail.com
-</p>
+            <p><strong>📧 Email</strong><br>
+                jeangerardhounkanrin@gmail.com
+            </p>
 
-<p><strong>📱 Téléphone</strong><br>
-06 05 60 77 46
-</p>
+            <p><strong>📱 Téléphone</strong><br>
+                06 05 60 77 46
+            </p>
 
-#
-Me contacter
-</a>
+            @gmail.com" class="contact-btn">
+                Me contacter
+            </a>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
-<!-- CENTRE -->
+    <!-- CENTRE -->
 
-<div>
+    <div>
 
-<h2 class="section-title">EXPÉRIENCES</h2>
+        <h2 id="experiences" class="section-title">
+            EXPÉRIENCES
+        </h2>
 
-<div class="job">
+        <div class="job">
+            <div class="job-title">
+                Assistant Chef de Projet SI (MOE)
+            </div>
 
-<div class="job-title">
-Assistant Chef de Projet SI (MOE)
-</div>
+            <div class="company">
+                CFAO Group – Alternance
+            </div>
 
-<div class="company">
-CFAO Group – Alternance
-</div>
+            <ul>
+                <li>Pilotage des activités SI</li>
+                <li>Support applicatif</li>
+                <li>Gestion des incidents</li>
+                <li>Accompagnement utilisateurs</li>
+                <li>Documentation et amélioration continue</li>
+            </ul>
+        </div>
 
-<ul>
-<li>Pilotage des activités SI</li>
-<li>Support applicatif</li>
-<li>Gestion des incidents</li>
-<li>Accompagnement utilisateurs</li>
-<li>Documentation et amélioration continue</li>
-</ul>
+        <div class="job">
+            <div class="job-title">
+                Exploitant Core Banking
+            </div>
 
-</div>
+            <div class="company">
+                NSIA Banque
+            </div>
+        </div>
 
-<div class="job">
+        <div class="job">
+            <div class="job-title">
+                Gestionnaire Applicatif Bancaire
+            </div>
 
-<div class="job-title">
-Exploitant Core Banking
-</div>
+            <div class="company">
+                NSIA Banque
+            </div>
+        </div>
 
-<div class="company">
-NSIA Banque
-</div>
+        <div class="job">
+            <div class="job-title">
+                Assistant Chef de Projet IT & Digital
+            </div>
 
-</div>
+            <div class="company">
+                UBA Banque Bénin
+            </div>
+        </div>
 
-<div class="job">
+    </div>
 
-<div class="job-title">
-Gestionnaire Applicatif Bancaire
-</div>
+    <!-- DROITE -->
 
-<div class="company">
-NSIA Banque
-</div>
+    <div>
 
-</div>
+        <h2 id="competences" class="section-title">
+            COMPÉTENCES
+        </h2>
 
-<div class="job">
+        <div class="skill-category">
 
-<div class="job-title">
-Assistant Chef de Projet IT & Digital
-</div>
+            <h3>Outils</h3>
 
-<div class="company">
-UBA Banque Bénin
-</div>
+            <p>
+                Microsoft 365 • ServiceNow • Power BI • Active Directory
+            </p>
 
-</div>
+        </div>
 
-</div>
+        <div class="skill-category">
 
-<!-- DROITE -->
+            <h3>Pilotage SI</h3>
 
-<div>
+            <p>
+                Gestion de projet • Support applicatif • Gestion des incidents • Documentation IT
+            </p>
 
-<h2 class="section-title">COMPÉTENCES</h2>
+        </div>
 
-<div class="skill-category">
+        <div class="skill-category" id="formations">
 
-<h3>Outils</h3>
+            <h3>Formation</h3>
 
-<p>
-Microsoft 365 • ServiceNow • Power BI • Active Directory
-</p>
+            <p>
+                Master Expert en Informatique et Système d'Information (MESI)
+            </p>
 
-</div>
+            <p>
+                Licence Professionnelle Systèmes Réseaux et Sécurité (LPSRS)
+            </p>
 
-<div class="skill-category">
+        </div>
 
-<h3>Pilotage SI</h3>
+        <div class="skill-category" id="interets">
 
-<p>
-Gestion de projet • Support applicatif • Gestion des incidents • Documentation IT
-</p>
+            <h3>Centres d'intérêt</h3>
 
-</div>
+            <p>
+                Transformation digitale • Innovation • Technologies Microsoft • Gestion de projets SI
+            </p>
 
-<div class="skill-category">
+        </div>
 
-<h3>Formation</h3>
-
-<p>
-Master Expert en Informatique et Système d'Information (MESI)
-</p>
-
-<p>
-Licence Professionnelle Systèmes Réseaux et Sécurité (LPSRS)
-</p>
-
-</div>
-
-</div>
+    </div>
 
 </div>
 
 <footer>
-© 2026 Jean‑Gerard HOUNKANRIN - Tous droits réservés
+    © 2026 Jean‑Gerard HOUNKANRIN - Tous droits réservés
 </footer>
 
 </body>
