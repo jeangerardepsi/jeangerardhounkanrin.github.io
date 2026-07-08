@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,127 +16,177 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:#f3f3f3;
+    background:#f8f8f8;
+    color:#222;
 }
 
 /* HEADER */
 
 header{
-    text-align:center;
     background:white;
-    padding:30px 20px;
-    border-bottom:4px solid #1f3c88;
+    padding:35px 60px;
 }
 
 header h1{
-    color:#1f3c88;
-    font-size:60px;
-    font-weight:bold;
-    margin-bottom:15px;
+    font-size:28px;
+    font-weight:400;
+    color:#233f8f;
 }
 
 header h2{
-    font-size:28px;
-    font-weight:normal;
-    margin-bottom:25px;
+    font-size:52px;
+    font-weight:300;
+    color:#233f8f;
+    margin-top:10px;
 }
 
-nav{
+.menu-bar{
+    margin-top:25px;
     display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
 }
 
-nav a{
+.menu{
+    display:flex;
+    gap:35px;
+}
+
+.menu a{
     text-decoration:none;
-    color:#1f3c88;
-    font-weight:bold;
-}
-
-nav a:hover{
-    text-decoration:underline;
-}
-
-/* LAYOUT */
-
-.container{
-    display:grid;
-    grid-template-columns:25% 45% 30%;
-    gap:25px;
-    padding:20px;
-}
-
-.card{
-    background:white;
-    padding:20px;
-    box-shadow:0 0 8px rgba(0,0,0,0.08);
-}
-
-.section-title{
-    color:#1f3c88;
-    font-size:24px;
-    font-weight:bold;
-    border-bottom:3px solid #1f3c88;
-    padding-bottom:10px;
-    margin-bottom:20px;
-    text-transform:uppercase;
-}
-
-.photo{
-    width:220px;
-    height:220px;
-    object-fit:cover;
-    border-radius:50%;
-    border:5px solid #1f3c88;
-    display:block;
-    margin:20px auto;
-}
-
-.experience{
-    margin-bottom:30px;
-}
-
-.experience strong{
-    display:block;
-    margin-bottom:5px;
+    color:black;
     font-size:18px;
 }
 
-p{
-    margin-bottom:15px;
-    line-height:1.5;
+.cv-btn{
+    text-decoration:none;
+    color:black;
+    font-size:18px;
 }
 
-ul{
+.separator{
+    height:7px;
+    background:#d9d9d9;
+    margin-top:15px;
+}
+
+.separator::before{
+    content:"";
+    display:block;
+    width:80px;
+    height:7px;
+    background:#233f8f;
+}
+
+/* CONTENU */
+
+.content{
+    display:grid;
+    grid-template-columns:22% 48% 30%;
+    gap:30px;
+    padding:30px 60px;
+}
+
+/* COLONNE GAUCHE */
+
+.sidebar img{
+    width:100%;
+    border-radius:6px;
+}
+
+.info{
+    margin-top:20px;
+}
+
+.info p{
+    margin-bottom:10px;
+}
+
+.contact-btn{
+    display:block;
+    background:#233f8f;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* CENTRE */
+
+.section-title{
+    font-size:28px;
+    margin-bottom:25px;
+}
+
+.job{
+    margin-bottom:35px;
+}
+
+.job-title{
+    color:#233f8f;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.company{
+    font-size:18px;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.job ul{
     padding-left:20px;
 }
 
-li{
+.job li{
     margin-bottom:8px;
 }
 
+/* DROITE */
+
+.skill-category{
+    margin-bottom:30px;
+}
+
+.skill-category h3{
+    color:#233f8f;
+    margin-bottom:10px;
+}
+
+.skill-category p{
+    line-height:1.6;
+}
+
+/* FOOTER */
+
 footer{
-    background:#1f3c88;
+    background:#233f8f;
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:20px;
 }
 
 @media(max-width:1000px){
 
-    .container{
-        grid-template-columns:1fr;
-    }
+.content{
+    grid-template-columns:1fr;
+}
 
-    header h1{
-        font-size:40px;
-    }
+header{
+    padding:20px;
+}
 
-    header h2{
-        font-size:22px;
-    }
+header h2{
+    font-size:34px;
+}
+
+.menu-bar{
+    flex-direction:column;
+    gap:20px;
+}
+
 }
 
 </style>
@@ -152,133 +203,159 @@ footer{
 Pilotage IT & Support Applicatif | Chef de Projet SI
 </h2>
 
-<nav>
-#presentation
-experience">Expériences</a>
-#formation
-#competences
-#contact
-</nav>
+<div class="menu-bar">
+
+<div class="menu">
+#
+#
+#Formations</a>
+#
+#
+</div>
+
+# class="cv-btn">
+Télécharger mon CV PDF
+</a>
+
+</div>
+
+<div class="separator"></div>
 
 </header>
 
-<div class="container">
+<div class="content">
 
-    <!-- COLONNE GAUCHE -->
+<!-- GAUCHE -->
 
-    <div class="card">
+<div class="sidebar">
 
-        <div class="section-title">Photo</div>
+<img src="photo.png" alt="Photo">
 
-        <img src="photo.png" alt="Photo de profil" class="photo">
+<div class="info">
 
-        <div class="section-title" id="contact">
-            Contact
-        </div>
+<p><strong>📍 Localisation</strong><br>Cergy (95)</p>
 
-        <p>📧 jeangerardhounkanrin@gmail.com</p>
-        <p>📱 06 05 60 77 46</p>
-        <p>📍 Cergy (95)</p>
+<p><strong>📧 Email</strong><br>
+jeangerardhounkanrin@gmail.com
+</p>
 
-        <div class="section-title" id="presentation">
-            Présentation
-        </div>
+<p><strong>📱 Téléphone</strong><br>
+06 05 60 77 46
+</p>
 
-        <p>
-            Professionnel des Systèmes d'Information spécialisé dans le pilotage IT,
-            le support applicatif et l'accompagnement des utilisateurs.
-        </p>
+#
+Me contacter
+</a>
 
-        <p>
-            Expérience dans les secteurs bancaire et retail international avec une
-            orientation qualité de service, amélioration continue et pilotage SI.
-        </p>
+</div>
 
-    </div>
+</div>
 
-    <!-- COLONNE CENTRALE -->
+<!-- CENTRE -->
 
-    <div class="card">
+<div>
 
-        <div class="section-title" id="experience">
-            Expériences
-        </div>
+<h2 class="section-title">EXPÉRIENCES</h2>
 
-        <div class="experience">
-            <strong>CFAO Group</strong>
-            Assistant Chef de Projet SI (MOE) - Alternance
-        </div>
+<div class="job">
 
-        <div class="experience">
-            <strong>NSIA Banque</strong>
-            Exploitant Core Banking
-        </div>
+<div class="job-title">
+Assistant Chef de Projet SI (MOE)
+</div>
 
-        <div class="experience">
-            <strong>NSIA Banque</strong>
-            Gestionnaire Applicatif Bancaire
-        </div>
+<div class="company">
+CFAO Group – Alternance
+</div>
 
-        <div class="experience">
-            <strong>UBA Banque Bénin</strong>
-            Assistant Chef de Projet IT & Digital
-        </div>
+<ul>
+<li>Pilotage des activités SI</li>
+<li>Support applicatif</li>
+<li>Gestion des incidents</li>
+<li>Accompagnement utilisateurs</li>
+<li>Documentation et amélioration continue</li>
+</ul>
 
-        <div class="experience">
-            <strong>UBA Banque Bénin</strong>
-            Senior IT & Digital Support
-        </div>
+</div>
 
-    </div>
+<div class="job">
 
-    <!-- COLONNE DROITE -->
+<div class="job-title">
+Exploitant Core Banking
+</div>
 
-    <div class="card">
+<div class="company">
+NSIA Banque
+</div>
 
-        <div class="section-title" id="competences">
-            Compétences
-        </div>
+</div>
 
-        <ul>
-            <li>Pilotage de projets SI</li>
-            <li>Gestion des incidents</li>
-            <li>Support Applicatif</li>
-            <li>IT Corporate</li>
-            <li>Microsoft 365</li>
-            <li>ServiceNow</li>
-            <li>Power BI</li>
-            <li>Core Banking</li>
-            <li>Documentation IT</li>
-        </ul>
+<div class="job">
 
-        <br>
+<div class="job-title">
+Gestionnaire Applicatif Bancaire
+</div>
 
-        <div class="section-title" id="formation">
-            Formations
-        </div>
+<div class="company">
+NSIA Banque
+</div>
 
-        <p>
-            Master Expert en Informatique et Système d'Information (MESI)
-        </p>
+</div>
 
-        <p>
-            Licence Professionnelle Systèmes Réseaux et Sécurité (LPSRS)
-        </p>
+<div class="job">
 
-        <br>
+<div class="job-title">
+Assistant Chef de Projet IT & Digital
+</div>
 
-        <div class="section-title">
-            Réalisations
-        </div>
+<div class="company">
+UBA Banque Bénin
+</div>
 
-        <ul>
-            <li>Formation de plus de 50 utilisateurs</li>
-            <li>Participation au projet ENABLON</li>
-            <li>Contribution au maintien en condition opérationnelle</li>
-            <li>Rédaction de procédures et guides utilisateurs</li>
-        </ul>
+</div>
 
-    </div>
+</div>
+
+<!-- DROITE -->
+
+<div>
+
+<h2 class="section-title">COMPÉTENCES</h2>
+
+<div class="skill-category">
+
+<h3>Outils</h3>
+
+<p>
+Microsoft 365 • ServiceNow • Power BI • Active Directory
+</p>
+
+</div>
+
+<div class="skill-category">
+
+<h3>Pilotage SI</h3>
+
+<p>
+Gestion de projet • Support applicatif • Gestion des incidents • Documentation IT
+</p>
+
+</div>
+
+<div class="skill-category">
+
+<h3>Formation</h3>
+
+<p>
+Master Expert en Informatique et Système d'Information (MESI)
+</p>
+
+<p>
+Licence Professionnelle Systèmes Réseaux et Sécurité (LPSRS)
+</p>
+
+</div>
+
+</div>
 
 </div>
 
