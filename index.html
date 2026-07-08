@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jean-Gerard HOUNKANRIN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jean-Gerard HOUNKANRIN</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f3f3f3;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        /* HEADER */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f3f3f3;
+}
 
-        header {
-            text-align: center;
-            background: white;
-            padding: 30px 20px;
-            border-bottom: 4px solid #1f3c88;
-        }
+/* HEADER */
 
-        header h1 {
-            color: #1f3c88;
-            font-size: 72px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+header{
+    text-align:center;
+    background:white;
+    padding:30px 20px;
+    border-bottom:4px solid #1f3c88;
+}
 
-        header h2 {
-            font-size: 32px;
-            font-weight: normal;
-            margin-bottom: 25px;
-        }
+header h1{
+    color:#1f3c88;
+    font-size:60px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
 
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+header h2{
+    font-size:28px;
+    font-weight:normal;
+    margin-bottom:25px;
+}
 
-        nav a {
-            text-decoration: none;
-            color: black;
-            font-size: 18px;
-        }
+nav{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
 
-        nav a:hover {
-            color: #1f3c88;
-        }
+nav a{
+    text-decoration:none;
+    color:#1f3c88;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* LAYOUT */
+
+.container{
+    display:grid;
+    grid-template-columns:25% 45% 30%;
+    gap:25px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    box-shadow:0 0 8px rgba(0,0,0,0.08);
+}
+
+.section-title{
+    color:#1f3c88;
+    font-size:24px;
+    font-weight:bold;
+    border-bottom:3px solid #1f3c88;
+    padding-bottom:10px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
 
 .photo{
     width:220px;
@@ -65,243 +91,200 @@
     display:block;
     margin:20px auto;
 }
-        
 
-        /* CONTENU */
+.experience{
+    margin-bottom:30px;
+}
 
-        .container {
-            display: grid;
-            grid-template-columns: 25% 45% 30%;
-            gap: 25px;
-            padding: 20px;
-        }
+.experience strong{
+    display:block;
+    margin-bottom:5px;
+    font-size:18px;
+}
 
-        .card {
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
-        }
+p{
+    margin-bottom:15px;
+    line-height:1.5;
+}
 
-        .section-title {
-            color: #1f3c88;
-            font-size: 24px;
-            font-weight: bold;
-            border-bottom: 3px solid #1f3c88;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
+ul{
+    padding-left:20px;
+}
 
-        .photo-placeholder {
-            height: 180px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px dashed #1f3c88;
-            margin-bottom: 20px;
-        }
+li{
+    margin-bottom:8px;
+}
 
-        .experience {
-            margin-bottom: 30px;
-        }
+footer{
+    background:#1f3c88;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
 
-        .experience strong {
-            display: block;
-            font-size: 18px;
-            margin-bottom: 4px;
-        }
+@media(max-width:1000px){
 
-        p {
-            margin-bottom: 15px;
-            line-height: 1.4;
-        }
+    .container{
+        grid-template-columns:1fr;
+    }
 
-        ul {
-            padding-left: 20px;
-        }
+    header h1{
+        font-size:40px;
+    }
 
-        li {
-            margin-bottom: 8px;
-        }
+    header h2{
+        font-size:22px;
+    }
+}
 
-        footer {
-            background: #1f3c88;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        @media(max-width:1000px) {
-
-            .container {
-                grid-template-columns: 1fr;
-            }
-
-            header h1 {
-                font-size: 42px;
-            }
-
-            header h2 {
-                font-size: 22px;
-            }
-        }
-    </style>
+</style>
 
 </head>
 
 <body>
 
-    <header>
+<header>
 
-        <h1>Jean-Gerard HOUNKANRIN</h1>
+<h1>Jean-Gerard HOUNKANRIN</h1>
 
-        <h2>
-            Pilotage IT & Support Applicatif | Chef de Projet SI
-        </h2>
+<h2>
+Pilotage IT & Support Applicatif | Chef de Projet SI
+</h2>
 
-       <nav>
-
+<nav>
 #presentation
-
-#experience
-
+experience">Expériences</a>
 #formation
-
 #competences
-
-#contact>
-
+#contact
 </nav>
 
-    </header>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <!-- COLONNE GAUCHE -->
+    <!-- COLONNE GAUCHE -->
 
-        <div class="card">
+    <div class="card">
 
-            <div class="section-title">Photo</div>
+        <div class="section-title">Photo</div>
 
-<img src="photo.png"" class="photo">
+        <img src="photo.png" alt="Photo de profil" class="photo">
 
-         </div>
-
-            <div class="section-title" id="contact">Contact</div>
-
-            <p>📧 jeangerardhounkanrin@gmail.com</p>
-            <p>📱 06 05 60 77 46</p>
-            <p>📍 Cergy (95)</p>
-
-            <div class="section-title" id="presentation">
-                Présentation
-            </div>
-
-            <p>
-                Professionnel des Systèmes d'Information spécialisé
-                dans le pilotage IT, le support applicatif et
-                l'accompagnement des utilisateurs.
-            </p>
-
-            <p>
-                Expérience dans les secteurs bancaire et retail
-                international avec une forte orientation vers la
-                qualité de service et l'amélioration continue.
-            </p>
-
+        <div class="section-title" id="contact">
+            Contact
         </div>
 
-        <!-- COLONNE CENTRALE -->
+        <p>📧 jeangerardhounkanrin@gmail.com</p>
+        <p>📱 06 05 60 77 46</p>
+        <p>📍 Cergy (95)</p>
 
-        <div class="card">
-
-            <div class="section-title" id="experience">
-                Expériences
-            </div>
-
-            <div class="experience">
-                <strong>CFAO Group</strong>
-                Assistant Chef de Projet SI (MOE) - Alternance
-            </div>
-
-            <div class="experience">
-                <strong>NSIA Banque</strong>
-                Exploitant Core Banking
-            </div>
-
-            <div class="experience">
-                <strong>NSIA Banque</strong>
-                Gestionnaire Applicatif Bancaire
-            </div>
-
-            <div class="experience">
-                <strong>UBA Banque Bénin</strong>
-                Assistant Chef de Projet IT & Digital
-            </div>
-
-            <div class="experience">
-                <strong>UBA Banque Bénin</strong>
-                Senior IT & Digital Support
-            </div>
-
+        <div class="section-title" id="presentation">
+            Présentation
         </div>
 
-        <!-- COLONNE DROITE -->
+        <p>
+            Professionnel des Systèmes d'Information spécialisé dans le pilotage IT,
+            le support applicatif et l'accompagnement des utilisateurs.
+        </p>
 
-        <div class="card">
+        <p>
+            Expérience dans les secteurs bancaire et retail international avec une
+            orientation qualité de service, amélioration continue et pilotage SI.
+        </p>
 
-            <div class="section-title" id="competences">
-                Compétences
-            </div>
+    </div>
 
-            <ul>
-                <li>Pilotage de projets SI</li>
-                <li>Gestion des incidents</li>
-                <li>Support Applicatif</li>
-                <li>IT Corporate</li>
-                <li>Microsoft 365</li>
-                <li>ServiceNow</li>
-                <li>Power BI</li>
-                <li>Core Banking</li>
-                <li>Documentation IT</li>
-            </ul>
+    <!-- COLONNE CENTRALE -->
 
-            <br>
+    <div class="card">
 
-            <div class="section-title" id="formation">
-                Formations
-            </div>
+        <div class="section-title" id="experience">
+            Expériences
+        </div>
 
-            <p>
-                Master Expert en Informatique et Système d'Information (MESI)
-            </p>
+        <div class="experience">
+            <strong>CFAO Group</strong>
+            Assistant Chef de Projet SI (MOE) - Alternance
+        </div>
 
-            <p>
-                Licence Professionnelle Systèmes Réseaux et Sécurité (LPSRS)
-            </p>
+        <div class="experience">
+            <strong>NSIA Banque</strong>
+            Exploitant Core Banking
+        </div>
 
-            <br>
+        <div class="experience">
+            <strong>NSIA Banque</strong>
+            Gestionnaire Applicatif Bancaire
+        </div>
 
-            <div class="section-title">
-                Réalisations
-            </div>
+        <div class="experience">
+            <strong>UBA Banque Bénin</strong>
+            Assistant Chef de Projet IT & Digital
+        </div>
 
-            <ul>
-                <li>Formation de plus de 50 utilisateurs</li>
-                <li>Participation au projet ENABLON</li>
-                <li>Contribution au maintien en condition opérationnelle</li>
-                <li>Rédaction de procédures et guides utilisateurs</li>
-            </ul>
-
+        <div class="experience">
+            <strong>UBA Banque Bénin</strong>
+            Senior IT & Digital Support
         </div>
 
     </div>
 
-    <footer>
-        © 2026 Jean-Gerard HOUNKANRIN - Tous droits réservés
-    </footer>
+    <!-- COLONNE DROITE -->
+
+    <div class="card">
+
+        <div class="section-title" id="competences">
+            Compétences
+        </div>
+
+        <ul>
+            <li>Pilotage de projets SI</li>
+            <li>Gestion des incidents</li>
+            <li>Support Applicatif</li>
+            <li>IT Corporate</li>
+            <li>Microsoft 365</li>
+            <li>ServiceNow</li>
+            <li>Power BI</li>
+            <li>Core Banking</li>
+            <li>Documentation IT</li>
+        </ul>
+
+        <br>
+
+        <div class="section-title" id="formation">
+            Formations
+        </div>
+
+        <p>
+            Master Expert en Informatique et Système d'Information (MESI)
+        </p>
+
+        <p>
+            Licence Professionnelle Systèmes Réseaux et Sécurité (LPSRS)
+        </p>
+
+        <br>
+
+        <div class="section-title">
+            Réalisations
+        </div>
+
+        <ul>
+            <li>Formation de plus de 50 utilisateurs</li>
+            <li>Participation au projet ENABLON</li>
+            <li>Contribution au maintien en condition opérationnelle</li>
+            <li>Rédaction de procédures et guides utilisateurs</li>
+        </ul>
+
+    </div>
+
+</div>
+
+<footer>
+© 2026 Jean‑Gerard HOUNKANRIN - Tous droits réservés
+</footer>
 
 </body>
-
 </html>
